@@ -3,12 +3,19 @@
 #include "modifiers.h"
 #include "key.h"
 
-int main()
+int main(int argc, char *argv[])
 {
-    // The input from the user.
+    // The input for the encrypter
     std::string input;
-    std::cout << "Please input a phrase: ";
-    getline(std::cin, input);
+    if (argc > 1)
+    {
+        input = argv[1];
+    }
+    else
+    {
+        std::cout << "Please input a phrase: ";
+        getline(std::cin, input);
+    }
 
     KeyPhrase key(input);
 
@@ -16,7 +23,7 @@ int main()
     std::string result;
     for (int i = 0; i < input.length(); i++)
     {
-        result += AddChars(input[i],key.GetChar(i));
+        result += AddChars(input[i], key.GetChar(i));
     }
     std::cout << result << "\n";
 }
