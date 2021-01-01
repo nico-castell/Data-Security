@@ -2,35 +2,6 @@
     "tasks": [
         {
 // G++ Build ===========================================================================================================
-            "type": "cppbuild",
-            "label": "G++ - Build active file",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Compile current file into debuggable executable.",
-            "presentation": {
-                "echo": true,
-                "reveal": "silent",
-                "focus": false,
-                "panel": "shared",
-                "showReuseMessage": false,
-                "clear": true
-            }
-        },
         {
             "type": "cppbuild",
             "label": "G++ - Compile project",
@@ -54,34 +25,6 @@
                 "isDefault": true
             },
             "detail": "Compile project into debuggable executable.",
-            "presentation": {
-                "echo": true,
-                "reveal": "silent",
-                "focus": false,
-                "panel": "shared",
-                "showReuseMessage": false,
-                "clear": true
-            }
-        },
-        {
-            "type": "cppbuild",
-            "label": "G++ - Precompile active file",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-c",
-                "${file}"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Pre-compile active file into object file.",
             "presentation": {
                 "echo": true,
                 "reveal": "silent",
