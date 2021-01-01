@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < input.length(); i++)
     {
+        // TODO: Add other mathematical operations
         result += AddChars(input[i], key.GetChar(i));
     }
     std::cout << result << "\n";
