@@ -26,6 +26,27 @@
             "miDebuggerPath": "/usr/bin/gdb"
         },
         {
+            "name": "Dbg project",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/passcrypt",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Compile project",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
             "name": "Build and debug project",
             "type": "cppdbg",
             "request": "launch",
