@@ -82,6 +82,28 @@
                 "showReuseMessage": false,
                 "clear": true
             }
+        },
+        {
+            "type": "cppbuild",
+            "label": "Clean project",
+            "command": "/usr/bin/make",
+            "args": [ "clean", "-s" ],
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Use makefile to clean the project",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
         }
     ],
     "version": "2.0.0"
