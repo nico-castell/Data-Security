@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Build and debug active file",
+            "name": "G++ - Debug file",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -22,15 +22,15 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Build active file",
+            "preLaunchTask": "G++ - Build active file",
             "miDebuggerPath": "/usr/bin/gdb"
         },
         {
-            "name": "Dbg project",
+            "name": "G++ - Debug project",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/passcrypt",
-            "args": [],
+            "args": [ "${input:ARGS}" ],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -43,15 +43,15 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Compile project",
+            "preLaunchTask": "G++ - Compile project",
             "miDebuggerPath": "/usr/bin/gdb"
         },
         {
-            "name": "Build and debug project",
+            "name": " Make - Build and run project",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/passcrypt",
-            "args": [],
+            "args": [ "${input:ARGS}" ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -64,8 +64,15 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Build Project",
+            "preLaunchTask": "Make - Build project",
             "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "ARGS",
+            "type": "promptString",
+            "description": "Input the argument/s for the program"
         }
     ]
 }
