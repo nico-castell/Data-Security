@@ -1,6 +1,7 @@
 {
     "tasks": [
         {
+// G++ Build ===========================================================================================================
             "type": "cppbuild",
             "label": "Build active file",
             "command": "/usr/bin/g++",
@@ -9,6 +10,38 @@
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compile current file into executable.",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "Compile project",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/Program.cpp",
+                "${workspaceFolder}/modifiers.cpp",
+                "${workspaceFolder}/key.cpp",
+                "-o",
+                "${workspaceFolder}/passcrypt"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -58,6 +91,7 @@
                 "clear": true
             }
         },
+// Make build ==========================================================================================================
         {
             "type": "cppbuild",
             "label": "Build Project",
