@@ -1,5 +1,4 @@
 #include <iostream>
-#include <bitset>
 #include "modifiers.h"
 #include "key.h"
 
