@@ -1,5 +1,6 @@
 #include "key.h"
 
+// Build the key from the input
 KeyPhrase::KeyPhrase(const std::string &origin)
 {
     this->key[0] = origin[0];
@@ -8,6 +9,7 @@ KeyPhrase::KeyPhrase(const std::string &origin)
     this->key[3] = origin[origin.length() - 1];
 }
 
+// Get a character in the range of the key
 char KeyPhrase::GetChar(const int &i)
 {
     return key[i % 4];
