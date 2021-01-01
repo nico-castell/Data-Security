@@ -4,13 +4,15 @@
 
 int main(int argc, char *argv[])
 {
-    // The input for the encrypter
-    std::string input;
+    std::string input;  // The input for the encrypter
+    std::string result; // The result of the program.
+
+    // If the user passed an argument, use it as the input.
     if (argc > 1)
     {
         input = argv[1];
     }
-    else
+    else // Get the input from the console.
     {
         std::cout << "Please input a phrase: ";
         getline(std::cin, input);
@@ -18,8 +20,6 @@ int main(int argc, char *argv[])
 
     KeyPhrase key(input);
 
-    // The output of the program.
-    std::string result;
     for (int i = 0; i < input.length(); i++)
     {
         result += AddChars(input[i], key.GetChar(i));
