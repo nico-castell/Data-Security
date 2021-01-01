@@ -1,3 +1,6 @@
+# Exclude compilation result
+passcrypt
+
 # Exclude windows config files, shortcuts and temporary files
 *.db
 *.ini
