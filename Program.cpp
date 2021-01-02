@@ -22,8 +22,22 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < input.length(); i++)
     {
-        // TODO: Add other mathematical operations
-        result += AddChars(input[i], key.GetChar(i));
+        int operation = i % 4;
+        switch (operation)
+        {
+        case 0:
+            result += AddChars(input[i], key.GetChar(i));
+            break;
+        case 1:
+            result += RestChars(input[i], key.GetChar(i));
+            break;
+        case 2:
+            result += MultiplyChars(input[i], key.GetChar(i));
+            break;
+        case 3:
+            result += TriChars(input[i], key.GetChar(i));
+            break;
+        }
     }
     std::cout << result << "\n";
 }
