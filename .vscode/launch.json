@@ -4,12 +4,15 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+// G++ =================================================================================================================
         {
             "name": "G++ - Debug project",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/passcrypt",
-            "args": [ "${input:ARGS}" ],
+            "args": [
+                "${input:ARGS}"
+            ],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -26,11 +29,37 @@
             "miDebuggerPath": "/usr/bin/gdb"
         },
         {
+            "name": "G++ - Debug file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasename}",
+            "args": [
+                "${input:ARGS}"
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "G++ - Compile file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+// Make ================================================================================================================
+        {
             "name": " Make - Build and run project",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/passcrypt",
-            "args": [ "${input:ARGS}" ],
+            "args": [
+                "${input:ARGS}"
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
