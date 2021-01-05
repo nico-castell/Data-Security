@@ -1,6 +1,5 @@
 {
     "tasks": [
-        {
 // G++ Build ===========================================================================================================
         {
             "type": "cppbuild",
@@ -25,6 +24,36 @@
                 "isDefault": true
             },
             "detail": "Compile project into debuggable executable.",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "G++ - Compile file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasename}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compile file into debuggable executable.",
             "presentation": {
                 "echo": true,
                 "reveal": "silent",
