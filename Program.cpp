@@ -20,19 +20,17 @@
 
 int main(int argc, char *argv[])
 {
+    if (argc != 2)
+    {
+        std::cout << "\e[31mERROR: You must input one argument\e[00m\n";
+        return 1;
+    }
+
     std::string input;  // The input for the encrypter
     std::string result; // The result of the program.
 
-    // If the user passed an argument, use it as the input.
-    if (argc > 1)
-    {
-        input = argv[1];
-    }
-    else // Get the input from the console.
-    {
-        std::cout << "Please input a phrase: ";
-        getline(std::cin, input);
-    }
+    // Use the argument from the user as the input.
+    input = argv[1];
 
     KeyPhrase key(input);
 
@@ -56,4 +54,6 @@ int main(int argc, char *argv[])
         }
     }
     std::cout << result << "\n";
+
+    return 0;
 }
