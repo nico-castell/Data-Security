@@ -12,7 +12,7 @@ int main()
     {
         char character = input[i];
         std::bitset<8> binaryForm(character);
-        std::cout << binaryForm << "\n";
+        std::cout << binaryForm << "\t" << int(character) << "\n";
     }
     // std::cout << "\n";
 }
