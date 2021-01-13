@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 {
     if (argc != 2)
     {
-        std::cout << "\e[31mERROR: You must input one argument\e[00m\n";
+        std::cerr << "\e[31mERROR: You must input one argument\e[00m\n";
         return 1;
     }
 
