@@ -20,7 +20,7 @@
 // Normalize ASCII character between value 31 and 127 (96).
 char NormalizeASCII(const char &character)
 {
-    return 32 + (character % 94);
+    return 33 + (character % 94);
 }
 
 // Add the numerical values of two characters, normalize for the ASCII table
