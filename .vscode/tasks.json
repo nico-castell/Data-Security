@@ -11,7 +11,7 @@
                 "${workspaceFolder}/modifiers.cpp",
                 "${workspaceFolder}/key.cpp",
                 "-o",
-                "${workspaceFolder}/passcrypt"
+                "${workspaceFolder}/passobfuscate"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"

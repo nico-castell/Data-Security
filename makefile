@@ -1,5 +1,5 @@
-passcrypt: Program.o modifiers.o key.o
-	g++ -g Program.o modifiers.o key.o -o passcrypt
+passobfuscate: Program.o modifiers.o key.o
+	g++ -g Program.o modifiers.o key.o -o passobfuscate
 
 Program.o: Program.cpp
 	g++ -c Program.cpp
@@ -11,4 +11,4 @@ key.o: key.cpp
 	g++ -c key.cpp
 
 clean:
-	rm -f -v passcrypt *.o 2> /dev/null
+	rm -f -v passobfuscate *.o 2> /dev/null
