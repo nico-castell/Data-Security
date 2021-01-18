@@ -9,7 +9,7 @@
             "name": "G++ - Debug project",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/passcrypt",
+            "program": "${workspaceRoot}/passobfuscate",
             "args": [
                 "${input:ARGS}"
             ],
@@ -56,7 +56,7 @@
             "name": " Make - Build and run project",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/passcrypt",
+            "program": "${workspaceRoot}/passobfuscate",
             "args": [
                 "${input:ARGS}"
             ],
