@@ -22,12 +22,13 @@ int main(int argc, char *argv[])
 {
     if (argc != 2)
     {
-        std::cerr << "\e[31mERROR: You must input one argument\e[00m\n";
+        std::cerr << "\e[31mERROR: You must input one argument\e[00m\n"
+                  << "\e[33mUsage\e[00m: " + (string)argv[0] + " \"password\"";
         return 1;
     }
 
-    std::string input;  // The input for the encrypter
-    std::string result; // The result of the program.
+    string input;  // The input for the encrypter
+    string result; // The result of the program.
 
     // Use the argument from the user as the input.
     input = argv[1];
