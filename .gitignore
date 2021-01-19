@@ -1,7 +1,5 @@
 # Exclude compilation result
-passcrypt
-passgen
-passobfuscate
+pass*
 
 # Exclude windows config files, shortcuts and temporary files
 *.db
