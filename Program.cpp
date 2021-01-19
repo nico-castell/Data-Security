@@ -22,8 +22,10 @@ int main(int argc, char *argv[])
 {
     if (argc != 2)
     {
+        string name = argv[0];
         std::cerr << "\e[31mERROR: You must input one argument\e[00m\n"
-                  << "\e[33mUsage\e[00m: " + (string)argv[0] + " \"password\"";
+                  << "\e[33mUsage\e[00m: " + name + " \"password\"\n"
+                  << "\e[36mExample:\e[00m " + name + " \"Arbolito\"\n";
         return 1;
     }
 
