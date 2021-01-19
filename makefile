@@ -1,5 +1,5 @@
 passobfuscate: Program.o modifiers.o key.o
-	g++ -g Program.o modifiers.o key.o -o passobfuscate
+	g++ Program.o modifiers.o key.o -o passobfuscate
 
 Program.o: Program.cpp
 	g++ -c Program.cpp

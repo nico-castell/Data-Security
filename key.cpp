@@ -17,7 +17,7 @@
 #include "key.h"
 
 // Build the key from the input
-KeyPhrase::KeyPhrase(const std::string &origin)
+KeyPhrase::KeyPhrase(const string &origin)
 {
     this->key[0] = origin[0];
     this->key[1] = origin[1];
