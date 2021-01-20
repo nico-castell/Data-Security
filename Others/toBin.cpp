@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     if (argc != 2)
     {
         string name = argv[0];
-        std::cerr << "\e[33mERROR: You must input one argument\n"
+        std::cerr << "\e[31mERROR: You must input one argument\n"
                   << "\e[33mUsage:\e[00m " + name + " 'Phrase'\n"
                   << "\e[36mExample:\e[00m " + name + " 'Hello World!'\n";
         return 1;
