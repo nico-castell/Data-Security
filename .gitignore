@@ -12,6 +12,10 @@ pass*
 *test*
 *tmp*
 
+# Exclude vim files
+*.swp
+*~
+
 # Prerequisites
 *.d
 
