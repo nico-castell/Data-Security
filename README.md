@@ -1,4 +1,6 @@
 # Data security
+[![Repository Size](https://img.shields.io/github/repo-size/nico-castell/Data-Security)]
+
 
 This repositoriy is a ***show*** of some programs and data security algorithms I made.
 
