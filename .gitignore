@@ -7,9 +7,11 @@ pass*
 *.lnk
 *.url
 ~*
+$RECYCLE.BIN/
 
 # Exclude test and tmp files
 *test*
+*temp*
 *tmp*
 
 # Exclude vim files
