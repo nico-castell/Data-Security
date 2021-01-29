@@ -4,12 +4,11 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-// G++ =================================================================================================================
         {
-            "name": "G++ - Debug project",
+            "name": "G++ - Debug Binary",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/passobfuscate",
+            "program": "${workspaceRoot}/binme",
             "args": [
                 "${input:ARGS}"
             ],
@@ -25,16 +24,17 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "G++ - Compile project",
+            "preLaunchTask": "G++ - Compile Binary",
             "miDebuggerPath": "/usr/bin/gdb"
         },
         {
-            "name": "G++ - Debug file",
+            "name": "G++ - Debug Encrypter",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasename}",
+            "program": "${workspaceRoot}/passcrypt",
             "args": [
-                "${input:ARGS}"
+                "${input:ARGS}",
+                "${input:ARGS2}"
             ],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
@@ -48,22 +48,21 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "G++ - Compile file",
+            "preLaunchTask": "G++ - Compile Encrypter",
             "miDebuggerPath": "/usr/bin/gdb"
         },
-// Make ================================================================================================================
         {
-            "name": " Make - Build and run project",
+            "name": "G++ - Debug Generator",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/passobfuscate",
+            "program": "${workspaceRoot}/passgen",
             "args": [
-                "${input:ARGS}"
+                "${input:ARGS}",
             ],
-            "stopAtEntry": false,
+            "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": true,
+            "externalConsole": false,
             "MIMode": "gdb",
             "setupCommands": [
                 {
@@ -72,15 +71,43 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Make - Build project",
+            "preLaunchTask": "G++ - Compile Generator",
             "miDebuggerPath": "/usr/bin/gdb"
-        }
+        },
+        {
+            "name": "G++ - Debug Obfuscator",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/passobfuscate",
+            "args": [
+                "${input:ARGS}",
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "G++ - Compile Obfuscator",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
     ],
     "inputs": [
         {
             "id": "ARGS",
             "type": "promptString",
-            "description": "Input the argument/s for the program"
+            "description": "Input the argument for the program"
+        },
+        {
+            "id": "ARGS2",
+            "type": "promptString",
+            "description": "Input the second argument for the program"
         }
     ]
 }
