@@ -7,7 +7,7 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
-                "${workspaceFolder}/Binary/binary.cpp",
+                "${workspaceFolder}/Binary/Program.cpp",
                 "-o",
                 "${workspaceFolder}/binme"
             ],
@@ -155,13 +155,40 @@
             "command": "/usr/bin/make",
             "args": [ "clean", "-s" ],
             "options": {
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}"
             },
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "detail": "Use makefile to clean the project",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        // Compress the program files ==================================================================================
+        {
+            "type": "process",
+            "label": "Compress the program",
+            "command": "/usr/bin/zip",
+            "args": [
+                "-9",
+                "DataSecurity.zip",
+                "passcrypt",
+                "passgen",
+                "passobfuscate",
+                "binme"
+            ],
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "detail": "Zip the compiled files",
             "presentation": {
                 "echo": true,
                 "reveal": "silent",
