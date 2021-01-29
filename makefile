@@ -1,14 +1,25 @@
-passobfuscate: Program.o modifiers.o key.o
-	g++ Program.o modifiers.o key.o -o passobfuscate
+all: binme passcrypt passgen passobfuscate
 
-Program.o: Program.cpp
-	g++ -c Program.cpp
+binme: Binary/binary.cpp
+	g++ -o binme Binary/Program.cpp
 
-modifiers.o: modifiers.cpp
-	g++ -c modifiers.cpp
+passcrypt: Encrypter/Program.cpp
+	g++ -o passcrypt Encrypter/Program.cpp
 
-key.o: key.cpp
-	g++ -c key.cpp
+passgen: Generator/Program.cpp
+	g++ -o passgen Generator/Program.cpp
+
+passobfuscate: Obfuscator/Program.o Obfuscator/key.o Obfuscator/modifiers.o
+	g++ -o passobfuscate Obfuscator/Program.o Obfuscator/key.o Obfuscator/modifiers.o
+
+Obfuscator/Program.o: Obfuscator/Program.cpp
+	g++ -c -o Obfuscator/Program.o Obfuscator/Program.cpp
+
+Obfuscator/key.o: Obfuscator/key.cpp
+	g++ -c -o Obfuscator/key.o Obfuscator/key.cpp
+
+Obfuscator/modifiers.o: Obfuscator/modifiers.cpp
+	g++ -c -o Obfuscator/modifiers.o Obfuscator/modifiers.cpp
 
 clean:
-	rm -f -v passobfuscate *.o 2> /dev/null
+	rm -fv Obfuscator/*.o binme passcrypt passgen passobfuscate 2>/dev/null
