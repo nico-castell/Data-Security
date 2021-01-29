@@ -1,5 +1,6 @@
 # Exclude compilation result
 pass*
+binme
 
 # Exclude windows config files, shortcuts and temporary files
 *.db
@@ -17,6 +18,9 @@ $RECYCLE.BIN/
 # Exclude vim files
 *.swp
 *~
+
+# Exclude Visual Studio files
+.vs/*
 
 # Prerequisites
 *.d
