@@ -1,6 +1,6 @@
 # Change log
 
-All significant changes to **PopOS Start** will be documented here
+All significant changes to **Data Security** will be documented here
 
 ## Released
 
