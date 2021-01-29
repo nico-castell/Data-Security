@@ -2,6 +2,7 @@
 pass*
 binme
 DataSecurity.zip
+DataSecurity.tar*
 
 # Exclude windows config files, shortcuts and temporary files
 *.db
