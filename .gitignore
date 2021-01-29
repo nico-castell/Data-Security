@@ -1,5 +1,7 @@
 # Exclude compilation result
 pass*
+binme
+DataSecurity.zip
 
 # Exclude windows config files, shortcuts and temporary files
 *.db
