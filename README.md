@@ -11,23 +11,23 @@ few tweaks to the [config files](.vscode) on any other platforms.
 
 ## Folders
 
-1. **[Binary](Binary)**: This folder contains a binay visualizer.
+1. **[Binary](Binary)**: This project contains a binay visualizer.
     You input some text, and it displays the binary, octal, hexadecimal, and
-    decimal values of your file.
-1. **[Encrypter](Encrypter)**: This folder contains a program with a simple
+    decimal values of your text.
+1. **[Encrypter](Encrypter)**: This project contains a program with a simple
     XOR encryption algorithm.
-1. **[Generator](Generator)**: This folder contains a simple password generator.
-1. **[Obfuscator](Obfuscator)**: This folder contains an obfuscator, more
-    information is available on that folder's README.
+1. **[Generator](Generator)**: This project contains a simple password generator.
+1. **[Obfuscator](Obfuscator)**: This project contains an obfuscator, more
+    information is available on that project's README.
 
 ## How to use the workspace
 
 There are some build and debug tasks already prepared, as well as a
-[makefile](makefile), to quickly compile and run the different projects.
+[makefile](makefile) to quickly compile and run the different projects.
 
 1. **Build tasks:** There are 6 build tasks prepared, 4 to compile each
-    project individually, 1 to compile everything with the makefile, and 1
-    to clean everything with the makefile.
+    project individually, 1 to compile through the the makefile, and 1
+    to clean through the makefile.
 1. **Debug configurations:** There are 4 debug configurations, 1 for each
     project.
 
