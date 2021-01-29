@@ -17,6 +17,12 @@ $RECYCLE.BIN/
 *temp*
 *tmp*
 
+# What files to track from the workspace folder
+.vscode/*
+!.vscode/extension.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
 # Exclude vim files
 *.swp
 *~
