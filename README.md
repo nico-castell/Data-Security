@@ -1,19 +1,21 @@
 # Data security
-![GitHub repo size](https://img.shields.io/github/repo-size/nico-castell/Data-Security?color=yellow&label=Repository%20Size)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/nico-castell/Data-Security?color=g&label=Release)
+[![GitHub repo size](https://img.shields.io/github/repo-size/nico-castell/Data-Security?color=yellow&label=Repository%20Size)](https://github.com/nico-castell/Data-Security)
+[![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/nico-castell/Data-Security/latest?color=yellow&label=Commits%20since%20last%20release)](https://github.com/nico-castell/Data-Security/commits)
+[![GitHub](https://img.shields.io/github/license/nico-castell/Data-Security?color=yellow&label=License)](LICENSE)
 
+This repositoriy is a ***show*** of some programs and data security
+algorithms I made.
 
-This repositoriy is a ***show*** of some programs and data security algorithms I made.
+## Folders
 
-## Branches
-
-1. **Main**: This branch contains a data *obfuscation* program.
-2. **Generator**: This branch contains a password generation algorithm.
-3. **Encrypter**: This branch contains a data encryption algorithm.
-
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/nico-castell/Data-Security/main?color=orange&label=Latest%20commit%20@%20main)  
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/nico-castell/Data-Security/generator?color=orange&label=Latest%20commit%20@%20generator)  
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/nico-castell/Data-Security/encrypter?color=orange&label=Latest%20commit%20@%20encrypter)  
+1. **[Binary](Binary)**: This folder contains a binay visualizer.
+    You input some text, and it displays the binary, octal, hexadecimal, and
+    decimal values of your file.
+1. **[Encrypter](Encrypter)**: This folder contains a program with a simple
+    XOR encryption algorithm.
+1. **[Generator](Generator)**: This folder contains a simple password generator.
+1. **[Obfuscator](Obfuscator)**: This folder contains an obfuscator, more
+    information is available on that folder's README.
 
 ## Licensing
 
