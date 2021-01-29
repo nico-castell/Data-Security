@@ -4,7 +4,10 @@
 [![GitHub](https://img.shields.io/github/license/nico-castell/Data-Security?color=yellow&label=License)](LICENSE)
 
 This repositoriy is a ***show*** of some programs and data security
-algorithms I made.
+algorithms I made. It's meant to be used in
+[Visual Studio Code](https://code.visualstudio.com/download), and on
+**Linux**. However, you should me able to compile almost everything with a
+few tweaks to the [config files](.vscode) on any other platforms.
 
 ## Folders
 
@@ -16,6 +19,17 @@ algorithms I made.
 1. **[Generator](Generator)**: This folder contains a simple password generator.
 1. **[Obfuscator](Obfuscator)**: This folder contains an obfuscator, more
     information is available on that folder's README.
+
+## How to use the workspace
+
+There are some build and debug tasks already prepared, as well as a
+[makefile](makefile), to quickly compile and run the different projects.
+
+1. **Build tasks:** There are 6 build tasks prepared, 4 to compile each
+    project individually, 1 to compile everything with the makefile, and 1
+    to clean everything with the makefile.
+1. **Debug configurations:** There are 4 debug configurations, 1 for each
+    project.
 
 ## Licensing
 

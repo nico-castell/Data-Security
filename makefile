@@ -1,7 +1,7 @@
 all: binme passcrypt passgen passobfuscate
 
 binme: Binary/binary.cpp
-	g++ -o binme Binary/binary.cpp
+	g++ -o binme Binary/Program.cpp
 
 passcrypt: Encrypter/Program.cpp
 	g++ -o passcrypt Encrypter/Program.cpp

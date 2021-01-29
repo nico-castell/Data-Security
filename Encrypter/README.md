@@ -1,6 +1,44 @@
-# XOR
+# Encryption program
 
-This is an XOR table:
+This is an encryption program that uses a bitwise XOR gate to encrypt and
+decrypt strings.
+
+1. [How to use](#How-to-use)
+1. [XOR](#XOR)
+    1. [XOR Encryption](#XOR-Encryption)
+        1. [How it's broken down](#How-it's-broken-down)
+
+## How to use
+
+Compile the program with one of these ways:
+
+* Manually compile the program from the workspace root.  
+    `g++ -o passcrypt Encrypter/Program.cpp`
+* Use the build menu in Visual Studio Code (compiles a debuggable file)
+    1. Press **ctrl+shift+b**
+    1. Choose **"G++ - Compile Encrypter"**
+
+Use the program from the terminal, this example is explained in
+[How it's broken down](#How-it's-broken-down).
+
+```bash
+# To encrypt:
+$ ./passcrypt "Arbolito" DEF # ./passcrypt "Phrase" "Key"
+7$+)/0*
+
+# To decrypt:
+$ ./passcrypt `printf "\x057$+)/0*"` DEF
+Arbolito
+
+# Or use a variable:
+$ VAR="$(./passcrypt "Arbolito" DEF)"
+$ ./passcrypt "$VAR" DEF
+Arbolito
+```
+
+## XOR
+
+This is how an XOR evaluates booleans:
 
 Value 1 | Value 2 | Result
 -|-|-
@@ -9,7 +47,7 @@ Value 1 | Value 2 | Result
 0 | 1 | True
 1 | 1 | False
 
-## XOR Encryption
+### XOR Encryption
 
 This is the result of XOR encryption ([ASCII](http://www.asciitable.com/)):  
 Pass: Arbolito  
@@ -27,7 +65,7 @@ i | F | /
 t | D | 0
 o | E | *
 
-## How it's broken down:
+#### How it's broken down
 
 This is what happens to the binaries in the ecryption process:
 
@@ -57,21 +95,3 @@ Value 1 | Value 2 | Result
 **00101111** *(47)* '/' | **01000110** *(70)* 'F' | **01101001** *(105)* i'
 **00110000** *(78)* '0' | **01000100** *(68)* 'D' | **01110100** *(116)* t'
 **00101010** *(42)* '*' | **01000101** *(69)* 'E' | **01101111** *(111)* o'
-
-### Bash code to run this example
-
-Using the program available in this branch.
-
-If you're on Linux you can just use the [makefile](makefile) in this branch.
-
-```bash
-# To encrypt:
-./passcrypt "Arbolito" DEF
-
-# To decrypt:
-./passcrypt `printf "\x057$+)/0*"` DEF
-
-# Or use a variable
-VAR="$(./passcrypt "Arbolito" DEF)"
-./passcrypt "$VAR" DEF
-```
