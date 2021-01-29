@@ -1,15 +1,105 @@
 {
     "tasks": [
-// G++ Build ===========================================================================================================
+        // G++ Build ===================================================================================================
         {
             "type": "cppbuild",
-            "label": "G++ - Compile project",
+            "label": "G++ - Compile Binary",
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
-                "${workspaceFolder}/Program.cpp",
-                "${workspaceFolder}/modifiers.cpp",
-                "${workspaceFolder}/key.cpp",
+                "${workspaceFolder}/Binary/binary.cpp",
+                "-o",
+                "${workspaceFolder}/binme"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compile Binary project into debuggable executable.",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "G++ - Compile Encrypter",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/Encrypter/Program.cpp",
+                "-o",
+                "${workspaceFolder}/passcrypt"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compile Encrypter project into debuggable executable.",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "G++ - Compile Generator",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/Generator/Program.cpp",
+                "-o",
+                "${workspaceFolder}/passgen"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compile Generator project into debuggable executable.",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "G++ - Compile Obfuscator",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/Obfuscator/Program.cpp",
+                "${workspaceFolder}/Obfuscator/modifiers.cpp",
+                "${workspaceFolder}/Obfuscator/key.cpp",
                 "-o",
                 "${workspaceFolder}/passobfuscate"
             ],
@@ -23,7 +113,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "Compile project into debuggable executable.",
+            "detail": "Compile Obfuscator project into debuggable executable.",
             "presentation": {
                 "echo": true,
                 "reveal": "silent",
@@ -33,37 +123,7 @@
                 "clear": true
             }
         },
-        {
-            "type": "cppbuild",
-            "label": "G++ - Compile file",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasename}"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Compile file into debuggable executable.",
-            "presentation": {
-                "echo": true,
-                "reveal": "silent",
-                "focus": false,
-                "panel": "shared",
-                "showReuseMessage": false,
-                "clear": true
-            }
-        },
-// Make build ==========================================================================================================
+        // Make build ==================================================================================================
         {
             "type": "cppbuild",
             "label": "Make - Build project",
