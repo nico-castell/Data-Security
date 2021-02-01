@@ -1,7 +1,6 @@
 # Generating a password
 
-This program simply generates random integers from 33 to 126, which represent
-characters in the [ASCII table](http://www.asciitable.com/).
+This program simply generates random integers from 33 to 126, which represent characters in the [ASCII table](http://www.asciitable.com/).
 
 ## How to use
 

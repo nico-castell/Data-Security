@@ -1,13 +1,10 @@
 # Change log
-
 All significant changes to **Data Security** will be documented here
 
 ## Released
 
 ### Version [1.3.0](https://github.com/nico-castell/Data-Security/releases/tag/1.3.0) - *2021-01-29*
-
-This update merges the previous 3 branches into one, and sets up the
-workspace to be able to deal with that.
+This update merges the previous 3 branches into one, and sets up the workspace to be able to deal with that.
 
 #### Added
 1. Added folders to contain each repository.
@@ -35,7 +32,6 @@ The 2 branches: **generator** and **encrypter**
 Shields in the documentation
 
 ### Version [1.0.0](https://github.com/nico-castell/Data-Security/releases/tag/v1.0.0) - *2021-01-02*
-
 First working release.
 
 #### Added
