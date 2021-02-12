@@ -22,4 +22,4 @@ Obfuscator/modifiers.o: Obfuscator/modifiers.cpp
 	g++ -c -o Obfuscator/modifiers.o Obfuscator/modifiers.cpp
 
 clean:
-	rm -fv Obfuscator/*.o binme passcrypt passgen passobfuscate 2>/dev/null
+	rm -fv Obfuscator/.*~ Obfuscator/*.o binme passcrypt passgen passobfuscate .*~ 2>/dev/null
