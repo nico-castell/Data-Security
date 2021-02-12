@@ -17,7 +17,7 @@
 #include "key.h"
 
 // Build the key from the input
-KeyPhrase::KeyPhrase(const string &origin)
+KeyPhrase::KeyPhrase(const string& origin)
 {
     this->key[0] = origin[0];
     this->key[1] = origin[1];
@@ -26,7 +26,7 @@ KeyPhrase::KeyPhrase(const string &origin)
 }
 
 // Get a character in the range of the key
-char KeyPhrase::GetChar(const int &i)
+char KeyPhrase::GetChar(const int& i)
 {
     return key[i % 4];
 }

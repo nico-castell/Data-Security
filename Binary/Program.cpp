@@ -1,17 +1,17 @@
+#include <bitset>
 #include <iostream>
 #include <unistd.h>
-#include <bitset>
 using std::string;
 
 // Only print escape sequence to format output if the output is a console.
-string cprty(const string &formatting)
+string cprty(const string& formatting)
 {
     if (!isatty(fileno(stdout)))
         return "";
     return "\e[" + formatting + "m";
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
     // Validate arguments.
     if (argc != 2)
@@ -24,7 +24,8 @@ int main(int argc, char *argv[])
     }
 
     // The input from the user.
-    string input = argv[1]; int il = input.length();
+    string input = argv[1];
+    int il = input.length();
 
     // Print the headers for the table.
     std::cout << cprty("32") << "Binary  \tDec\tHex\tOct\tChar" << cprty("00") << "\n";

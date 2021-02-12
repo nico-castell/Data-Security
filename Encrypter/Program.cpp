@@ -18,13 +18,13 @@
 using std::string;
 
 // Fill the array
-void FillArray(char arr[], const string &str, const int &arrLength)
+void FillArray(char arr[], const string& str, const int& arrLength)
 {
     for (int i = 0; i < arrLength; i++)
         arr[i] = str[i];
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
     // Validate input.
     if (argc != 3)
