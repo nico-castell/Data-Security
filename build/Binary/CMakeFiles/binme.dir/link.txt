@@ -1,0 +1,1 @@
+/bin/g++-10 -g CMakeFiles/binme.dir/Program.cpp.o -o binme 

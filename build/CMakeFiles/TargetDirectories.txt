@@ -1,0 +1,11 @@
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/CMakeFiles/rebuild_cache.dir
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/CMakeFiles/edit_cache.dir
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/Binary/CMakeFiles/rebuild_cache.dir
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/Binary/CMakeFiles/edit_cache.dir
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/Binary/CMakeFiles/binme.dir
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/Encrypter/CMakeFiles/edit_cache.dir
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/Encrypter/CMakeFiles/rebuild_cache.dir
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/Encrypter/CMakeFiles/passcrypt.dir
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/Generator/CMakeFiles/rebuild_cache.dir
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/Generator/CMakeFiles/edit_cache.dir
+/home/nicolas/Development/AA - Frozen projects/Data Security/build/Generator/CMakeFiles/passgen.dir
