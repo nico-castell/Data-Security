@@ -14,8 +14,11 @@ $RECYCLE.BIN/
 
 # Exclude test and tmp files
 *test*
-*temp*
 *tmp*
+
+# Exclude build folder/s
+[Bb]uild/*
+[Oo]ut/*
 
 # What files to track from the workspace folder
 .vscode/*
