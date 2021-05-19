@@ -5,7 +5,7 @@ set(VERS 1.0.0)
 set(BIN "binme")
 set(ENC "passcrypt")
 set(GEN "passgen")
-# set(OBF "passobfuscate"
+set(OBF "passobfuscate")
 
 message("Configuring solution version ${VERS}")
 
@@ -16,5 +16,13 @@ project("${ENC}" VERSION "${VERS}")
 add_subdirectory("Encrypter")
 project("${GEN}" VERSION "${VERS}")
 add_subdirectory("Generator")
-# project("${OBF}" VERSION "${VERS}")
-# add_subdirectory("Obfuscator")
+project("${OBF}" VERSION "${VERS}")
+add_subdirectory("Obfuscator")
+
+# Add install option
+foreach(i "${BIN}" "${ENC}" "${GEN}" "${OBF}")
+	install(TARGETS "${i}"
+			RUNTIME
+			DESTINATION bin
+	)
+endforeach()
