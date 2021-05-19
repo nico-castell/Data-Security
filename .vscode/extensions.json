@@ -2,6 +2,6 @@
     "recommendations": [
         "ms-vscode.cpptools",
         "austin.code-gnu-global",
-        "visualstudioexptteam.vscodeintellicode"
+        "ms-vscode.cmake-tools"
     ]
 }
