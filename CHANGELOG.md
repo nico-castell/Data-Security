@@ -3,6 +3,13 @@ All significant changes to **Data Security** will be documented here
 
 ## Released
 
+### Version [2.0.0](https://github.com/nico-castell/Data-Security/releases/tag/2.0.0) - *2021-05-19*
+#### Added
+- [CMakeLists.txt](CMakeLists.txt):
+  - Now the project uses [CMake](https://cmake.org/) to configure the build environment.
+#### Changed
+- There were many small changes throughout the projects.
+
 ### Version [1.3.0](https://github.com/nico-castell/Data-Security/releases/tag/1.3.0) - *2021-01-29*
 This update merges the previous 3 branches into one, and sets up the workspace to be able to deal with that.
 
