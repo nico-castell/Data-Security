@@ -20,43 +20,43 @@
 
 int main(int argc, char* argv[])
 {
-    if (argc != 2)
-    {
-        string name = argv[0];
-        std::cerr << "\e[31mERROR: You must input one argument\e[00m\n"
-                  << "\e[33mUsage\e[00m: " + name + " \"password\"\n"
-                  << "\e[36mExample:\e[00m " + name + " \"Arbolito\"\n";
-        return 1;
-    }
+	if (argc != 2)
+	{
+		string name = argv[0];
+		std::cerr << "\e[31mERROR: You must input one argument\e[00m\n"
+					 << "\e[33mUsage\e[00m: " + name + " \"password\"\n"
+					 << "\e[36mExample:\e[00m " + name + " \"Arbolito\"\n";
+		return 1;
+	}
 
-    string input;  // The input for the encrypter
-    string result; // The result of the program.
+	string input;   // The input for the encrypter
+	string result;  // The result of the program.
 
-    // Use the argument from the user as the input.
-    input = argv[1];
+	// Use the argument from the user as the input.
+	input = argv[1];
 
-    KeyPhrase key(input);
+	KeyPhrase key(input);
 
-    for (int i = 0; i < input.length(); i++)
-    {
-        int operation = i % 4;
-        switch (operation)
-        {
-        case 0:
-            result += AddChars(input[i], key.GetChar(i));
-            break;
-        case 1:
-            result += RestChars(input[i], key.GetChar(i));
-            break;
-        case 2:
-            result += MultiplyChars(input[i], key.GetChar(i));
-            break;
-        case 3:
-            result += TriChars(input[i], key.GetChar(i));
-            break;
-        }
-    }
-    std::cout << result << "\n";
+	for (int i = 0; i < input.length(); i++)
+	{
+		int operation = i % 4;
+		switch (operation)
+		{
+		case 0:
+			result += AddChars(input[i], key.GetChar(i));
+			break;
+		case 1:
+			result += RestChars(input[i], key.GetChar(i));
+			break;
+		case 2:
+			result += MultiplyChars(input[i], key.GetChar(i));
+			break;
+		case 3:
+			result += TriChars(input[i], key.GetChar(i));
+			break;
+		}
+	}
+	std::cout << result << "\n";
 
-    return 0;
+	return 0;
 }

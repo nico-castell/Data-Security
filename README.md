@@ -1,10 +1,9 @@
 # Data security
-<!-- #region Shields -->
-[![Lines of code](https://img.shields.io/tokei/lines/github/nico-castell/Data-Security?color=yellow&label=Lines%20of%20code)](https://github.com/nico-castell/Data-Security)
-[![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/nico-castell/Data-Security/latest?color=yellow&label=Commits%20since%20last%20release)](https://github.com/nico-castell/Data-Security/commits)
-[![GitHub](https://img.shields.io/github/license/nico-castell/Data-Security?color=yellow&label=License)](LICENSE)
+[![Commits since latest release](https://img.shields.io/github/commits-since/nico-castell/Data-Security/latest?color=informational&label=Commits%20since%20last%20release&logoColor=white&logo=Git&style=flat-square)](https://github.com/nico-castell/Data-Security/commits)
+[![Release](https://img.shields.io/github/v/release/nico-castell/Data-Security?label=Release&color=informational&logo=GitHub&logoColor=white&style=flat-square)](https://github.com/nico-castell/Data-Security/releases/latest)
+[![LICENSE](https://img.shields.io/github/license/nico-castell/Data-Security?color=informational&label=License&logoColor=white&logo=Open%20Source%20Initiative&style=flat-square)](LICENSE)
+[![Lines of code](https://img.shields.io/tokei/lines/github/nico-castell/Data-Security?color=informational&label=Lines%20of%20code&logoColor=white&logo=C%2B%2B&style=flat-square)](https://github.com/nico-castell/Data-Security)
 [![CodeQL](https://img.shields.io/github/workflow/status/nico-castell/Data-Security/CodeQL?label=CodeQL&logo=GitHub%20Actions&logoColor=white&style=flat-square)](https://github.com/nico-castell/Data-Security/actions/workflows/codeql-analyze.yml)
-<!-- #endregion -->
 
 This repositoriy is a ***show*** of some programs and data security algorithms I made. It's meant to be used in
 [Visual Studio Code](https://code.visualstudio.com/download), and on **Linux**. However, you should me able to compile almost everything with a few tweaks to the [config files](.vscode) on any other platforms.

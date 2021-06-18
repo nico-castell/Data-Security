@@ -20,36 +20,38 @@ using std::string;
 // Fill the array
 void FillArray(char arr[], const string& str, const int& arrLength)
 {
-    for (int i = 0; i < arrLength; i++)
-        arr[i] = str[i];
+	for (int i = 0; i < arrLength; i++)
+		arr[i] = str[i];
 }
 
 int main(int argc, char* argv[])
 {
-    // Validate input.
-    if (argc != 3)
-    {
-        string name = argv[0];
-        std::cerr << "\e[31mERROR: You must input two arguments\e[00m\n"
-                  << "\e[33mUsage:\e[00m " + name + " \"password\" \"key\"\n"
-                  << "\e[36mExample:\e[00m " + name + " \"Arbolito\" DEF\n";
-        return 1;
-    }
+	// Validate input.
+	if (argc != 3)
+	{
+		string name = argv[0];
+		std::cerr << "\e[31mERROR: You must input two arguments\e[00m\n"
+					 << "\e[33mUsage:\e[00m " + name + " \"password\" \"key\"\n"
+					 << "\e[36mExample:\e[00m " + name + " \"Arbolito\" DEF\n";
+		return 1;
+	}
 
-    // Convert to strings and get their length.
-    string input = argv[1]; int il = input.length();
-    string key   = argv[2]; int kl = key.length();
+	// Convert to strings and get their length.
+	string input = argv[1];
+	int il = input.length();
+	string key = argv[2];
+	int kl = key.length();
 
-    // Create character arrays.
-    char _input[il], _key[kl];
-    FillArray(_input, input, il);
-    FillArray(_key, key, kl);
+	// Create character arrays.
+	char _input[il], _key[kl];
+	FillArray(_input, input, il);
+	FillArray(_key, key, kl);
 
-    // Begin encryption process.
-    string output = "";
-    for (int i = 0; i < il; i++)
-        output += _input[i] ^ _key[i % kl];
+	// Begin encryption process.
+	string output = "";
+	for (int i = 0; i < il; i++)
+		output += _input[i] ^ _key[i % kl];
 
-    std::cout << output << "\n";
-    return 0;
+	std::cout << output << "\n";
+	return 0;
 }

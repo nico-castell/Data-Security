@@ -21,28 +21,28 @@ using std::string;
 
 int main(int argc, char* argv[])
 {
-    // Validate argument input.
-    if (argc != 2)
-    {
-        string name = argv[0];
-        std::cerr << "\e[31mERROR: You must input one argument\e[00m\n"
-                  << "\e[33mUsage:\e[00m " + name + " <number_of_chars>\n"
-                  << "\e[36mExample:\e[00m " + name + " 12\n";
-        return 1;
-    }
-    // Define the number of characters.
-    int n_chars = strtol(argv[1], NULL, 10);
+	// Validate argument input.
+	if (argc != 2)
+	{
+		string name = argv[0];
+		std::cerr << "\e[31mERROR: You must input one argument\e[00m\n"
+					 << "\e[33mUsage:\e[00m " + name + " <number_of_chars>\n"
+					 << "\e[36mExample:\e[00m " + name + " 12\n";
+		return 1;
+	}
+	// Define the number of characters.
+	int n_chars = strtol(argv[1], NULL, 10);
 
-    srand(time(NULL));
-    string output = "";
+	srand(time(NULL));
+	string output = "";
 
-    // Use a randomizer to chreate a random password
-    for (int i = 0; i < n_chars; i++)
-    {
-        char ap = 33 + (rand() % 94);
-        output += ap;
-    }
-    std::cout << output << "\n";
+	// Use a randomizer to chreate a random password
+	for (int i = 0; i < n_chars; i++)
+	{
+		char ap = 33 + (rand() % 94);
+		output += ap;
+	}
+	std::cout << output << "\n";
 
-    return 0;
+	return 0;
 }

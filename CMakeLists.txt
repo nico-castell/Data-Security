@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.20.1)
+cmake_minimum_required(VERSION 3.16.0)
 
 # Projects and version
 set(VERS 1.0.0)
