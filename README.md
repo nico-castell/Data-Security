@@ -3,6 +3,7 @@
 [![Lines of code](https://img.shields.io/tokei/lines/github/nico-castell/Data-Security?color=yellow&label=Lines%20of%20code)](https://github.com/nico-castell/Data-Security)
 [![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/nico-castell/Data-Security/latest?color=yellow&label=Commits%20since%20last%20release)](https://github.com/nico-castell/Data-Security/commits)
 [![GitHub](https://img.shields.io/github/license/nico-castell/Data-Security?color=yellow&label=License)](LICENSE)
+[![CodeQL](https://img.shields.io/github/workflow/status/nico-castell/Data-Security/CodeQL?label=CodeQL&logo=GitHub%20Actions&logoColor=white&style=flat-square)](https://github.com/nico-castell/Data-Security/actions/workflows/codeql-analyze.yml)
 <!-- #endregion -->
 
 This repositoriy is a ***show*** of some programs and data security algorithms I made. It's meant to be used in
