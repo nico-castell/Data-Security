@@ -37,7 +37,7 @@ int main(int argc, char* argv[])
 
 	KeyPhrase key(input);
 
-	for (int i = 0; i < input.length(); i++)
+	for (size_t i = 0; i < input.length(); i++)
 	{
 		int operation = i % 4;
 		switch (operation)
